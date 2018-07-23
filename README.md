@@ -2,7 +2,7 @@
 
 ## Guidelines
 
-Assessments are meant to give you and Hack Reactor staff an idea of how well you understand, or can figure out, the material that you covered recently.
+Assessments are meant to give you and Hola Code staff an idea of how well you understand, or can figure out, the material that you covered recently.
 
 - Turn off all communication devices such as your phone, email, Slack, etc.
 - Fork this repo and clone down your fork to your laptop.
@@ -18,7 +18,7 @@ Assessments are meant to give you and Hack Reactor staff an idea of how well you
 
 ## Using and Referencing Outside Resources
 
-Each prompt contains a list of outside resources you are allowed to use to support your work on that prompt. Using *any* other resources, online or otherwise, including previous class materials, or, communicating through any mechanism with anyone other than Hack Reactor staff during the assessments is academic dishonesty and is cause for **immediate removal from the course.** If you have any questions about whether a resource is available for use, or if you are in need of support, submit a help request.
+Each prompt contains a list of outside resources you are allowed to use to support your work on that prompt. Using *any* other resources, online or otherwise, including previous class materials, or, communicating through any mechanism with anyone other than Hola Code's staff during the assessments is academic dishonesty and is cause for **immediate removal from the course.** If you have any questions about whether a resource is available for use, or if you are in need of support, submit a help request.
 
 ## Self-Grading Process
 
@@ -47,7 +47,7 @@ Solutions are submitted via [Pull Request](https://help.github.com/articles/usin
 1. From **your fork**, select `Pull Requests` and then create a `New pull request`. 
 2. STOP. *Before* you `Click to create a pull request for this comparison` you must **adjust the target branch** (aka `base branch`) to be your username. Once chagned, the pull-request heading should look like this:
 
-  > hackreactor:username ... username:master
+  > holacode:username ... username:master
 
 3. Copy and **paste the completed Grading Outline into the comment block** of your Pull Request.
 4. Click `Send pull request`
