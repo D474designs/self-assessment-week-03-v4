@@ -26,7 +26,10 @@ var FishTable = () => (
     //   );
     // };
 
-    // Display proper information from index.js
+    /*
+    Display proper information from index.js
+    */
+
     <tbody>
       <FishTableRow />
       <FishTableRow />

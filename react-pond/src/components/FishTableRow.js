@@ -36,14 +36,47 @@ class FishTableRow extends React.Component {
   // }
 
  // Refactor file to iterate through fishData from index.js, and to pull respective properties
+
+ // {
+ //   name: 'Goldfish',
+ //   image: 'http://tinyurl.com/n4vgcl5',
+ //   description: 'Everyone\'s first pet'
+ // },
+ // {
+ //   name: 'Pufferfish',
+ //   image: 'http://tinyurl.com/kxd7cuu',
+ //   description: 'So puffy!'
+ // },
+ // {
+ //   name: 'Tuna',
+ //   image: 'http://tinyurl.com/zgs7z2s',
+ //   description: 'Why are these things so huge? THey\'re terrifying.'
+ // }
+
   render() {
     return (
       <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
-        <td className="fish-name">Nemo</td>
+        <td className="fish-name">Goldfish</td>
         <td>
-          <img src="http://tinyurl.com/h8o5szh" />
+          <img src="http://tinyurl.com/n4vgcl5" />
         </td>
-        {this.state.showDescription ? <td className="fish-description">Does anyone know where my dad is?</td> : null}
+        {this.state.showDescription ? <td className="fish-description">'Everyone\'s first pet'</td> : null}
+      </tr>
+
+      <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
+        <td className="fish-name">Pufferfish</td>
+        <td>
+          <img src="http://tinyurl.com/kxd7cuu" />
+        </td>
+        {this.state.showDescription ? <td className="fish-description">'So puffy!'</td> : null}
+      </tr>
+
+      <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
+        <td className="fish-name">Tuna</td>
+        <td>
+          <img src="http://tinyurl.com/zgs7z2s" />
+        </td>
+        {this.state.showDescription ? <td className="fish-description">'Why are these things so huge? THey\'re terrifying.'</td> : null}
       </tr>
     )
   }
