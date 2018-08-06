@@ -52,12 +52,15 @@ angular.module('fish-pond')
   //           <p>{{phone.snippet}}</p>
   //         </li>
   //       </ul>
+
+  // Do not display description at first, and display on mouse hover (incomplete)
+
   template: `
     <div ng-click="$ctrl.toggleDescription()">
-      <span class="fish-name">Nemo</span>
+      <span class="fish-name">{{fish.name}}</span>
       <span>
-        <img src="http://tinyurl.com/h8o5szh" />
+        <img src="{{fish.url}}" />
       </span>
-      <span class="fish-description" ng-if="$ctrl.showDescription">Does anyone know where my dad is?</span>
+      <span class="fish-description" ng-if="!$ctrl.showDescription">{{fish.description}}</span>
     </div>`
 });
