@@ -1,5 +1,6 @@
 var FishTable = () => (
   <table>
+    // Display proper information from index.js
     <tbody>
       <FishTableRow />
       <FishTableRow />

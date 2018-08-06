@@ -6,7 +6,36 @@ class FishTableRow extends React.Component {
     };
   }
 
-  // Currently, the image being displayed is hardcoded from tinyurl.com 
+  // Currently, the image being displayed is hardcoded from tinyurl.com
+
+  //   function NumberList(props) {
+  //   const numbers = props.numbers;
+  //   const listItems = numbers.map((number) =>
+  //     <ListItem key={number.toString()}
+  //               value={number} />
+  //
+  //   );
+  //   return (
+  //     <ul>
+  //       {listItems}
+  //     </ul>
+  //   );
+  // }
+
+  // function NumberList(props) {
+  //   const numbers = props.numbers;
+  //   return (
+  //     <ul>
+  //       {numbers.map((number) =>
+  //         <ListItem key={number.toString()}
+  //                   value={number} />
+  //
+  //       )}
+  //     </ul>
+  //   );
+  // }
+
+ // Refactor file to iterate through fishData from index.js, and to pull respective properties
   render() {
     return (
       <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
