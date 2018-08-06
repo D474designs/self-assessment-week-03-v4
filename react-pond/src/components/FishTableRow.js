@@ -1,6 +1,6 @@
 class FishTableRow extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       showDescription: false
     };
@@ -53,31 +53,39 @@ class FishTableRow extends React.Component {
  //   description: 'Why are these things so huge? THey\'re terrifying.'
  // }
 
-  render() {
+  render(props) {
     return (
-      <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
-        <td className="fish-name">Goldfish</td>
-        <td>
-          <img src="http://tinyurl.com/n4vgcl5" />
-        </td>
-        {this.state.showDescription ? <td className="fish-description">'Everyone\'s first pet'</td> : null}
-      </tr>
+      // <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
+      //   <td className="fish-name">Goldfish</td>
+      //   <td>
+      //     <img src="http://tinyurl.com/n4vgcl5" />
+      //   </td>
+      //   {this.state.showDescription ? <td className="fish-description">'Everyone\'s first pet'</td> : null}
+      // </tr>
 
       <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
-        <td className="fish-name">Pufferfish</td>
+        <td className="fish-name">{props.name}</td>
         <td>
-          <img src="http://tinyurl.com/kxd7cuu" />
+          <img src="{props.image}" />
         </td>
-        {this.state.showDescription ? <td className="fish-description">'So puffy!'</td> : null}
+        {this.state.showDescription ? <td className="fish-description">props.description</td> : null}
       </tr>
 
-      <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
-        <td className="fish-name">Tuna</td>
-        <td>
-          <img src="http://tinyurl.com/zgs7z2s" />
-        </td>
-        {this.state.showDescription ? <td className="fish-description">'Why are these things so huge? THey\'re terrifying.'</td> : null}
-      </tr>
+      // <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
+      //   <td className="fish-name">Pufferfish</td>
+      //   <td>
+      //     <img src="http://tinyurl.com/kxd7cuu" />
+      //   </td>
+      //   {this.state.showDescription ? <td className="fish-description">'So puffy!'</td> : null}
+      // </tr>
+      //
+      // <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
+      //   <td className="fish-name">Tuna</td>
+      //   <td>
+      //     <img src="http://tinyurl.com/zgs7z2s" />
+      //   </td>
+      //   {this.state.showDescription ? <td className="fish-description">'Why are these things so huge? THey\'re terrifying.'</td> : null}
+      // </tr>
     )
   }
 }

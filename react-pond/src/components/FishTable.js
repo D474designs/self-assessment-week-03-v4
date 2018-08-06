@@ -1,4 +1,4 @@
-var FishTable = () => (
+var FishTable = (props) => (
   <table>
 
     // function App1() {
@@ -31,9 +31,9 @@ var FishTable = () => (
     */
 
     <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
+      <FishTableRow fish={props} />
+      <FishTableRow fish={props}/>
+      <FishTableRow fish={props}/>
     </tbody>
   </table>
 );
